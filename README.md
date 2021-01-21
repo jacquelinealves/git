@@ -41,6 +41,7 @@ git config --local user.email "seu@email.aqui"
 
     git merge [repositório] => gera um novo commit, informando que houve uma mescla entre duas branches.
     git rebase [repositório] => Junta todos os commits e aplica os commits de outra branch na branch atual.
+    git rebase -i => unir vários commits em um
 
 [Git Rebase vs Git Merge](https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c)
 
@@ -49,7 +50,7 @@ git config --local user.email "seu@email.aqui"
 
     git chechout --<file> => remove o arquivo que ainda não foi adicionado.
     git reset HEAD <file> => desfazer o add no arquivo que já foi adicionado, mas alterações no arquivo permanecem.
-    git revert [hash do commit] => desfaz as alterações que foram feitas, adicionadas e commitadas.
+    git revert {hash do commit} => desfaz as alterações que foram feitas, adicionadas e commitadas.
     
 <br /> *Git Stash* <br />
 
@@ -66,3 +67,29 @@ git config --local user.email "seu@email.aqui"
 <br /> *Git Tag* <br />
 
     git tag -a [v0.1.0] - m "..." => marca o ponto em que não haverá mais alteração naquele estado.
+
+<br /> *Git Cherry-pick* <br />
+Pode trazer um commit específico para a branch atual.
+
+<br /> *Git Bisec* <br />
+Encontrar o commit em que determinada alteração foi aplicada.
+
+<br /> *Git Blame* <br />
+Encontrar o responsável por determinada linha ou bloco de código.
+
+<br /> *Git Show* <br />
+
+    git --graph => exibe o log de commits de uma forma um pouco mais visual, onde as diferentes branches são representadas por linhas separadas.
+    
+<br /> *Git Graph* <br />
+
+    git show {hash} => mostra todas as alterações aplicadas pelo commit com o hash informado.
+    
+<br /> *Git Flow* <br />
+
+    git flow => estratégia de organização de branches: Master, Develop, Branches de feature, Branches de Hotfix e Branches de release.
+    
+<br /> *Git Branch* <br />
+
+    git branch -d {branch} => remove a branch.
+    git branch -D {branch} => remove a branch mesmo que ela tenha commits à frente da master.
