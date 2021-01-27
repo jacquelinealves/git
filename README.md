@@ -26,6 +26,12 @@ git config --local user.email "seu@email.aqui"
     git commit --amend => ao clicar enter abrirá o arquivo para editar o commit.
     git init --bare => repositório puro, que só contém as alterações dos arquivos e não contém uma cópia física dos arquivos, ou seja, não terá a working tree. Dessa forma, poupa espaço de armazenamento.
 
+<br /> *Git Branch* <br />
+
+    git branch -b {nova-branch} master => cria uma nova branch a partir da master.
+    it branch -d {branch} => remove a branch.
+    git branch -D {branch} => remove a branch mesmo que ela tenha commits à frente da master.
+
 <br /> *Git Remote* <br />
 
     git remote => lista repositório remotos que o repositório local conhece.
@@ -88,8 +94,3 @@ Encontrar o responsável por determinada linha ou bloco de código.
 <br /> *Git Flow* <br />
 
     git flow => estratégia de organização de branches: Master, Develop, Branches de feature, Branches de Hotfix e Branches de release.
-    
-<br /> *Git Branch* <br />
-
-    git branch -d {branch} => remove a branch.
-    git branch -D {branch} => remove a branch mesmo que ela tenha commits à frente da master.
