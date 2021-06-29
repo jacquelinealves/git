@@ -30,7 +30,7 @@ git config --local user.email "seu@email.aqui"
 
     git branch -b {nova-branch} master => cria uma nova branch a partir da master.
     git branch -m {novo-nome} => renomeia a branch atual.
-    it branch -d {branch} => remove a branch.
+    git branch -d {branch} => remove a branch.
     git branch -D {branch} => remove a branch mesmo que ela tenha commits à frente da master.
 
 <br /> *Git Remote* <br />
