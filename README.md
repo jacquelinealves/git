@@ -43,6 +43,7 @@ git config --local user.email "seu@email.aqui"
 
     git push [repositório] master => envia os dados de um repositório X para a master.
     git push -u origin master => seta que toda vez que for dado o git push será enviado para a master.
+    git branch --set-upstream-to <remote-branch> => comando equivalente ao git push -u origin
     
 <br /> *Git Rebase/Merge* <br />
 
