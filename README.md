@@ -96,3 +96,15 @@ Encontrar o responsável por determinada linha ou bloco de código.
 <br /> *Git Flow* <br />
 
     git flow => estratégia de organização de branches: Master, Develop, Branches de feature, Branches de Hotfix e Branches de release.
+
+
+### SSH Public Key
+
+    ssh-keygen -t rsa -C "your@email.com" -b 4096
+
+Para copiar a chave sem precisar abrir o arquivo:
+
+Instalar o XClip: `sudo apt-get install xclip`
+OSX: `pbcopy < ~/.ssh/id_rsa.pub`<br />
+Linux: `xclip -sel clip < ~/.ssh/id_rsa.pub`<br />
+Windows PowerShell: `cat ~/.ssh/id_rsa.pub | clip`
