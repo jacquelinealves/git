@@ -104,7 +104,7 @@ Encontrar o responsável por determinada linha ou bloco de código.
 
 Para copiar a chave sem precisar abrir o arquivo:
 
-Instalar o XClip: `sudo apt-get install xclip`
+Instalar o XClip: `sudo apt-get install xclip`<br />
 OSX: `pbcopy < ~/.ssh/id_rsa.pub`<br />
 Linux: `xclip -sel clip < ~/.ssh/id_rsa.pub`<br />
 Windows PowerShell: `cat ~/.ssh/id_rsa.pub | clip`
